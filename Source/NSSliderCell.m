@@ -603,6 +603,11 @@ double _doubleValueForMousePoint (NSPoint point, NSRect knobRect,
   return _value;
 }
 
+- (NSString *)stringValue
+{
+  return [NSString stringWithFormat: @"%f", _value];
+}
+
 - (void) setFloatValue: (float)aFloat
 {
   if (_minValue > _maxValue)
